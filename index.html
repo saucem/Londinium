@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Londinium | Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;500;700&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./static/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="bg-secondary-custom" id="header-info">
+      <p class="text-center text-light-custom nunito-text-bold py-2 mb-0">info@londinium.com.ar</p>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-tertiary-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand title-text crimson-text-bold" href="#"><img src="./static/images/londinium-logo.svg" alt="logo" width="32" class="mx-2"> LONDINIUM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link" href="#">Productos</a>
+            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#">Descargas</a>
+            <a class="nav-link" href="#">Acceder</a>
+            <a href="#" class="nav-link"><img src="./static/images/lang-ar.png" alt="Idioma" width="24"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="container-fluid d-flex justify-content-center align-items-center" id="hero">
+      <div class="text-center">
+        <img src="./static/images/hero-left.svg" alt="" class="decoration" id="hero-left">
+        <img src="./static/images/hero-right.svg" alt="" class="decoration" id="hero-right">
+        <img src="./static/images/hero-bottom-left.svg" alt="" class="decoration" id="hero-bottom-left">
+        <img src="./static/images/hero-bottom-right.svg" alt="" class="decoration" id="hero-bottom-right">
+        <h1 class="crimson-text-bold text-center text-dark hero-title fade-in-0">
+          Belleza y bienestar <br> desde lo natural.
+        </h1>
+        <h2 class="crimson-text-semibold text-center text-primary-custom hero-subtitle fade-in-1">
+          Ingredientes nobles. Inspiración botánica. Ciencia y tradición.
+        </h2>
+        <button class="btn btn-lg btn-secondary-custom mt-4 fade-in-2">Quiero más info</button>
+      </div>
+    </section>
+    <section class="container" id="products">
+      <div class="row product-container" id="product_1">
+        <div class="col-md-6">
+          <img src="./static/images/products/colageno_hidrolizado.png" alt="" class="w-100">
+        </div>
+        <div class="col-md-6 product-description-box text-center p-4">
+          <h2 class="section-title">Colágeno hidrolizado</h2>
+          <p class="section-text text-start">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident distinctio deleniti eos consectetur praesentium est accusamus fuga laborum? Iusto saepe aperiam vel illo ducimus eaque eveniet excepturi fuga mollitia fugiat?
+          </p>
+          <button class="btn btn-lg btn-secondary-custom">Conocer más</button>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="contact">
+      <div class="row justify-content-evenly">
+        <div class="col-md-6 d-flex flex-column justify-content-between p-4" id="form-container">
+          <h2 class="section-title text-primary-custom text-center">Podés escribirnos</h2>
+          <p class="section-text text-primary-custom">Completá el formulario con tus datos y tu consulta, y un asesor se pondrá en contacto a la brevedad.</p>
+          <form action="" method="post" class="text-center text-primary-custom">
+            <div class="mb-3 text-start">
+              <label for="name" class="form-label mb-0">Nombre</label>
+              <input type="text" class="form-control" name="name" id="name">
+            </div>
+            <div class="mb-3 text-start">
+              <label for="email" class="form-label mb-0">Correo electrónico</label>
+              <input type="email" class="form-control" name="email" id="email">
+            </div>
+            <div class="mb-3 text-start">
+              <label for="message" class="form-label mb-0">Consulta</label>
+              <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+            </div>
+            <button class="btn btn-lg btn-secondary-custom" type="submit"><i class="bi bi-send"></i>Enviar consulta</button>
+          </form>
+        </div>
+        <div class="col-md-4 d-flex flex-column align-items-center justify-content-between p-4" id="message-container">
+          <h2 class="section-title text-primary-custom">... o enviarnos un mensaje</h2>
+          <p class="section-text text-primary-custom">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem suscipit beatae recusandae molestias eos aut ipsa fuga delectus exercitationem. Quo officiis harum omnis natus iure aperiam reprehenderit eligendi assumenda aliquam.</p>
+          <button class="btn btn-lg btn-success"><i class="bi bi-whatsapp"></i>Whatsapp</button>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="aboutus">
+      <div class="row justify-content-evenly align-items-center" id="certifications">
+        <div class="col">
+          <img src="./static/images/logos/cruelty-free.svg" alt="cruelty-free">
+        </div>
+        <div class="col">
+          <img src="./static/images/logos/fda-approved.svg" alt="fda-approved">
+        </div>
+        <div class="col">
+          <img src="./static/images/logos/gluten-free.svg" alt="gluten-free">
+        </div>
+        <div class="col">
+          <img src="./static/images/logos/halal.svg" alt="halal">
+        </div>
+        <div class="col">
+          <img src="./static/images/logos/kosher.svg" alt="kosher">
+        </div>
+        <div class="col">
+          <img src="./static/images/logos/paraben-free.svg" alt="paraben-free">
+        </div>
+      </div>
+      <div class="row p-4" id="us">
+        <div class="col-12">
+          <h2 class="section-title text-primary-custom">Acerca de nosotros</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
