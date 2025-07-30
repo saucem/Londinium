@@ -3,8 +3,8 @@
   --gutter: 12px;
   /* color system start */
     --primary-color: #56887C;
-    --primary-light-color: #56887C;
-    --primary-dark-color: #56887C;
+    --primary-light-color: #72b3a3;
+    --primary-dark-color: #3c5f57;
     --secondary-color: #DF9551;
     --secondary-light-color: #DF9551;
     --secondary-dark-color: #dA7212;
@@ -33,6 +33,15 @@
 .text-tertiary-custom { color: var(--tertiary-color); }
 .text-dark-custom { color: var(--dark-color); }
 .text-light-custom { color: var(--light-color); }
+
+.btn-primary-custom { 
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  &:hover {
+    color: var(--light-color);
+    background-color: var(--primary-dark-color);
+  }
+}
 
 .btn-secondary-custom { 
   color: var(--light-color);
@@ -156,11 +165,11 @@ body {
 .navbar { min-height: 8vh; }
 
 section { 
-  height: 88vh;
-/*   display: flex;
-  justify-content: center;
-  align-items: center;
- */  position: relative;
+  height: 100vh;
+  position: relative;
+  &#hero {
+    height: 88vh;
+  }
 }
 
 .bi {
@@ -244,4 +253,17 @@ section {
 
 #certifications {
   opacity: 0.5;
+}
+
+#us-description {
+  background-color: var(--medium-color-subtle);
+  border-radius: 1rem;
+}
+
+#us-picture {
+  background-image: url(../images/lab-drop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
 }

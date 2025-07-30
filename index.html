@@ -16,7 +16,7 @@
     <div class="bg-secondary-custom" id="header-info">
       <p class="text-center text-light-custom nunito-text-bold py-2 mb-0">info@londinium.com.ar</p>
     </div>
-    <nav class="navbar navbar-expand-lg bg-tertiary-custom">
+    <nav class="navbar sticky-top navbar-expand-lg bg-tertiary-custom">
       <div class="container-fluid">
         <a class="navbar-brand title-text crimson-text-bold" href="#"><img src="./static/images/londinium-logo.svg" alt="logo" width="32" class="mx-2"> LONDINIUM</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
         <button class="btn btn-lg btn-secondary-custom mt-4 fade-in-2">Quiero más info</button>
       </div>
     </section>
-    <section class="container" id="products">
+    <section class="container d-flex justify-content-center align-items-center" id="products">
       <div class="row product-container" id="product_1">
         <div class="col-md-6">
           <img src="./static/images/products/colageno_hidrolizado.png" alt="" class="w-100">
@@ -65,7 +65,7 @@
         </div>
       </div>
     </section>
-    <section class="container" id="contact">
+    <section class="container d-flex justify-content-center align-items-center" id="contact">
       <div class="row justify-content-evenly">
         <div class="col-md-6 d-flex flex-column justify-content-between p-4" id="form-container">
           <h2 class="section-title text-primary-custom text-center">Podés escribirnos</h2>
@@ -93,7 +93,7 @@
         </div>
       </div>
     </section>
-    <section class="container" id="aboutus">
+    <section class="container d-flex flex-column justify-content-evenly" id="aboutus">
       <div class="row justify-content-evenly align-items-center" id="certifications">
         <div class="col">
           <img src="./static/images/logos/cruelty-free.svg" alt="cruelty-free">
@@ -114,9 +114,15 @@
           <img src="./static/images/logos/paraben-free.svg" alt="paraben-free">
         </div>
       </div>
-      <div class="row p-4" id="us">
-        <div class="col-12">
-          <h2 class="section-title text-primary-custom">Acerca de nosotros</h2>
+      <div class="row p-4 justify-content-evenly">
+        <div class="col-md-6 text-end p-4" id="us-description">
+          <h2 class="section-title text-primary-custom text-start">Acerca de nosotros</h2>
+          <p class="section-text text-primary-custom text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, magnam. Nisi, ad? Possimus vero sunt, nam veniam perferendis aspernatur eos tempora nostrum corporis praesentium. Accusamus eligendi praesentium eaque pariatur repudiandae.
+          Amet, architecto repudiandae impedit, aspernatur sunt aperiam facilis facere officiis, nesciunt praesentium quasi maiores laudantium unde. Rerum eaque quia eius? Ipsa maxime delectus repellendus beatae ullam nemo est illum nam!</p>
+          <button class="btn btn-lg btn-primary-custom">Conocer más</button>
+        </div>
+        <div class="col-md-5" id="us-picture">
+
         </div>
       </div>
     </section>
