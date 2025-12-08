@@ -1,5 +1,4 @@
 :root {
-  font-size: 14px;
   --gutter: 12px;
   /* color system start */
     --primary-color: #56887C;
@@ -21,6 +20,10 @@
     --light-color: #FFFBF0;
     --light-light-color: #FFFBF0;
     --light-dark-color: #FFFBF0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* color classes */
@@ -91,12 +94,12 @@
 }
 
 .hero-title {
-  font-size: 6vw;
-  line-height: 6vw;
+  font-size: 8vw;
+  line-height: 8vw;
 }
 
 .hero-subtitle {
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 .nav-link {
@@ -121,8 +124,21 @@
   font-weight: 700;
 }
 
-.section-text {
-  font-size: 1.25rem;
+.section-subtitle {
+  font-size: 1.15rem;
+}
+
+.feature-title {
+  width: 100%;
+  text-align: start;
+  font-weight: bold;
+  font-size: 1.15rem;
+  margin-bottom: 0;
+}
+
+.feature-description {
+  width: 100%;
+  text-align: start;
 }
 
 /* animations */
@@ -160,15 +176,20 @@ body {
 
 /* sizing & positioning */
 
+.py-8 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 #header-info { height: 4vh; }
 
 .navbar { min-height: 8vh; }
 
 section { 
-  height: 100vh;
+  scroll-margin-top: 12vh;
   position: relative;
   &#hero {
-    height: 88vh;
+    height: 100vh;
   }
 }
 
@@ -178,7 +199,7 @@ section {
 
 .decoration {
   z-index: -9999;
-  opacity: 35%;
+  opacity: 20%;
   position: absolute;
   animation-duration: 2000ms;
   animation-timing-function: ease-out;
@@ -202,16 +223,16 @@ section {
 }
 
 #hero-bottom-left {
-  width: 10vh;;
-  left: 25vw;
+  width: 15vh;;
+  left: 15vw;
   bottom: 0vh;
   animation-name: slide-in-bottom;
   animation-delay: 200ms;
 }
 
 #hero-bottom-right {
-  width: 15vh;;
-  right: 15vw;
+  width: 20vh;;
+  right: 10vw;
   bottom: 0vh;
   animation-name: slide-in-bottom;
   animation-delay: 100ms;
@@ -235,7 +256,10 @@ section {
 .product-container {
   width: 80vw;
   max-width: 1200px;
-  background-color: var(--medium-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-color: white; */
+  /* box-shadow: 0px 5px 24px rgba(0, 0, 0, .15); */
   border-radius: 1rem;
   & .product-description-box{
     color: var(--primary-color);
@@ -244,6 +268,30 @@ section {
     justify-content: center;
     align-items: center;
   }
+}
+
+#product_1 {
+  background-image: url(/static/images/products/ultra-verde-wide.png);
+}
+
+#product_2 {
+  background-image: url(/static/images/products/vitamina-c-wide.png);
+}
+
+#product_3 {
+  background-image: url(/static/images/products/colageno-magnesio-wide.png);
+}
+
+#product_4 {
+  background-image: url(/static/images/products/colageno-c-wide.png);
+}
+
+#product_5 {
+  background-image: url(/static/images/products/ultra-rojo-wide.png);
+}
+
+#product_6 {
+  background-image: url(/static/images/products/super-seed-wide.png);
 }
 
 #form-container {
@@ -255,15 +303,25 @@ section {
   opacity: 0.5;
 }
 
-#us-description {
-  background-color: var(--medium-color-subtle);
-  border-radius: 1rem;
-}
-
 #us-picture {
   background-image: url(../images/lab-drop.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1rem;
+}
+
+@media (max-width: 991px) {
+  .product-container{
+    background-image: none !important;
+  }
+
+  .feature-title::before {
+    content: "- ";
+  }
+
+  #us-description {
+    background-color: var(--medium-color-subtle);
+    border-radius: 1rem;
+  }
 }
