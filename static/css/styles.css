@@ -55,6 +55,17 @@ html {
   }
 }
 
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  & a {
+    color: var(--light-color);
+    text-decoration: none;
+  }
+}
+
+
+
 /* text classes */
 .title-text {
   color: var(--primary-color);
@@ -122,6 +133,7 @@ html {
   font-size: 2.25rem;
   font-family: "Crimson Text", serif;
   font-weight: 700;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -140,6 +152,20 @@ html {
   width: 100%;
   text-align: start;
 }
+
+.table {
+  border: 1px solid var(--primary-dark-color);
+  & tbody tr {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+  }
+  & td {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    border-left: 1px solid;
+  }
+}
+
 
 /* animations */
 
@@ -174,7 +200,15 @@ body {
   & img { vertical-align: text-top; }
 }
 
+a img {
+  vertical-align: text-top;
+}
+
 /* sizing & positioning */
+
+.spacer {
+  height: 12vh;
+}
 
 .py-8 {
   padding-top: 4rem;
@@ -261,7 +295,7 @@ section {
   /* background-color: white; */
   /* box-shadow: 0px 5px 24px rgba(0, 0, 0, .15); */
   border-radius: 1rem;
-  & .product-description-box{
+  & .product-description-box {
     color: var(--primary-color);
     display: flex;
     flex-direction: column;
@@ -309,6 +343,18 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1rem;
+}
+
+
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 15vw;
+    line-height: 12vw;
+  }
+
+  .hero-subtitle {
+    font-size: 6vw;
+  }
 }
 
 @media (max-width: 991px) {

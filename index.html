@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;500;700&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="./static/css/styles.css">
+  <link rel="stylesheet" href="/static/css/styles.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon/favicon-16x16.png">
@@ -22,19 +22,19 @@
     </div>
     <nav class="navbar sticky-top navbar-expand-lg bg-tertiary-custom shadow-sm">
       <div class="container-fluid">
-        <a class="navbar-brand title-text crimson-text-bold" href="#"><img src="./static/images/londinium-logo.svg" alt="logo" width="32" class="mx-2"> LONDINIUM</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand title-text crimson-text-bold" href="#"><img src="/static/images/londinium-logo.svg" alt="logo" width="32" class="mx-2"> LONDINIUM</a>
+        <a class="navbar-toggler" type="a" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.html#header-info">Inicio</a>
-            <a class="nav-link" href="index.html#products">Productos</a>
-            <a class="nav-link" href="index.html#contact">Contacto</a>
-            <a class="nav-link" href="index.html#aboutus">Nosotros</a>
-            <a class="nav-link" href="download.html">Descargas</a>
+            <a class="nav-link active" aria-current="page" href="/index.html#header-info">Inicio</a>
+            <a class="nav-link" href="/index.html#products">Productos</a>
+            <a class="nav-link" href="/index.html#contact">Contacto</a>
+            <a class="nav-link" href="/index.html#aboutus">Nosotros</a>
+            <a class="nav-link" href="/download.html">Descargas</a>
             <a class="nav-link" href="#">Acceder</a>
-            <a href="#" class="nav-link"><img src="./static/images/lang-ar.png" alt="Idioma" width="24"></a>
+            <a href="#" class="nav-link"><img src="/static/images/lang-ar.png" alt="Idioma" width="24"></a>
           </div>
         </div>
       </div>
@@ -43,25 +43,25 @@
   <main>
     <section class="container-fluid d-flex justify-content-center align-items-center" id="hero">
       <div class="text-center">
-        <!-- <img src="./static/images/hero-left.svg" alt="" class="decoration" id="hero-left">
-        <img src="./static/images/hero-right.svg" alt="" class="decoration" id="hero-right"> -->
-        <img src="./static/images/hero-bottom-left.svg" alt="" class="decoration" id="hero-bottom-left">
-        <img src="./static/images/hero-bottom-right.svg" alt="" class="decoration" id="hero-bottom-right">
+        <!-- <img src="/static/images/hero-left.svg" alt="" class="decoration" id="hero-left">
+        <img src="/static/images/hero-right.svg" alt="" class="decoration" id="hero-right"> -->
+        <img src="/static/images/hero-bottom-left.svg" alt="" class="decoration" id="hero-bottom-left">
+        <img src="/static/images/hero-bottom-right.svg" alt="" class="decoration" id="hero-bottom-right">
         <h1 class="crimson-text-bold text-center text-dark hero-title fade-in-0">
           Belleza y bienestar <br> desde lo natural.
         </h1>
         <h2 class="crimson-text-semibold text-center text-primary-custom hero-subtitle fade-in-1">
           Ingredientes nobles. Inspiración botánica. Ciencia y tradición.
         </h2>
-        <button class="btn btn-lg btn-secondary-custom mt-4 fade-in-2">Quiero más info</button>
+        <a class="btn btn-lg btn-secondary-custom mt-4 fade-in-2" href="aboutus.html">Quiero más info</a>
       </div>
     </section>
     <section class="container d-flex flex-column justify-content-center align-items-center py-8" id="products">
       <div class="row product-container justify-content-md-end py-4" id="product_1">
         <div class="col-lg-6 d-lg-none d-flex justify-content-center">
-          <img src="./static/images/products/ultra-verde-narrow.png" alt="Foto de producto Ultra Verde" class="w-75">
+          <img src="/static/images/products/ultra-verde-narrow.png" alt="Foto de producto Ultra Verde" class="w-75">
         </div>
-        <div class="col-lg-6 col-xl-8 product-description-box p-4">
+        <div class="col-lg-6 col-xl-8 product-description-box">
           <h2 class="section-title">Ultra Verde Fusion</h2>
           <p class="section-subtitle text-start">
             Vitalidad, depuración y equilibrio con el poder de los superalimentos.
@@ -77,14 +77,14 @@
           <p class="feature-description d-none d-md-block">
             Sin aditivos, colorantes ni conservantes. Producto elaborado bajo estándares internacionales de calidad.
           </p>
-          <button class="btn btn-lg btn-secondary-custom mt-4">Conocer más</button>
+          <a class="btn btn-lg btn-secondary-custom mt-4" href="/products/ultra-verde.html">Conocer más</a>
         </div>
       </div>
       <div class="row product-container justify-content-md-end py-4" id="product_2">
         <div class="col-lg-6 d-lg-none d-flex justify-content-center">
-          <img src="./static/images/products/vitamina-c-narrow.png" alt="Foto e producto Vitamina C" class="w-75">
+          <img src="/static/images/products/vitamina-c-narrow.png" alt="Foto e producto Vitamina C" class="w-75">
         </div>
-        <div class="col-lg-6 col-xl-8 product-description-box p-4">
+        <div class="col-lg-6 col-xl-8 product-description-box">
           <h2 class="section-title">Vitamina C</h2>
           <p class="section-subtitle text-start">
             Refuerza tu sistema inmunológico y tu energía diaria.
@@ -100,14 +100,14 @@
           <p class="feature-description d-none d-md-block">
             Sin azúcares añadidos, sin conservantes, apto para todas las edades. <br> Formulado para ofrecer la mejor biodisponibilidad y sabor natural.
           </p>
-          <button class="btn btn-lg btn-secondary-custom mt-4">Conocer más</button>
+          <a class="btn btn-lg btn-secondary-custom mt-4">Conocer más</a>
         </div>
       </div>
       <div class="row product-container justify-content-md-end py-4" id="product_3">
         <div class="col-lg-6 d-lg-none d-flex justify-content-center">
-          <img src="./static/images/products/colageno-magnesio-narrow.png" alt="Foto de producto Colágeno Hidrolizado con Sales de Magnesio" class="w-75">
+          <img src="/static/images/products/colageno-magnesio-narrow.png" alt="Foto de producto Colágeno Hidrolizado con Sales de Magnesio" class="w-75">
         </div>
-        <div class="col-lg-6 col-xl-8 product-description-box p-4">
+        <div class="col-lg-6 col-xl-8 product-description-box">
           <h2 class="section-title">Colágeno y Sales de Magnesio</h2>
           <p class="section-subtitle text-start">
             Energía, elasticidad y fortaleza muscular en un solo producto.
@@ -123,15 +123,15 @@
           <p class="feature-description d-none d-md-block">
             El colágeno mejora la resistencia y elasticidad del tejido conectivo, la vitamina C promueve la síntesis del colágeno y combate el estrés oxidativo, y las sales de magnesio aportan equilibrio electrolítico y son esenciales para la contracción muscular.
           </p>
-          <button class="btn btn-lg btn-secondary-custom mt-4">Conocer más</button>
+          <a class="btn btn-lg btn-secondary-custom mt-4">Conocer más</a>
         </div>
       </div>
       <div class="row product-container justify-content-md-end py-4" id="product_4">
         <div class="col-lg-6 d-lg-none d-flex justify-content-center">
-          <img src="./static/images/products/colageno-c-narrow.png" alt="Foto de producto Colágeno Hidrolizado con Vitamina C" class="w-75">
+          <img src="/static/images/products/colageno-c-narrow.png" alt="Foto de producto Colágeno Hidrolizado con Vitamina C" class="w-75">
         </div>
-        <div class="col-lg-6 col-xl-8 product-description-box p-4">
-          <h2 class="section-title">Colágeno y Vitamina C</h2>
+        <div class="col-lg-6 col-xl-8 product-description-box">
+          <h2 class="section-title">Colágeno y Vitamina-C</h2>
           <p class="section-subtitle text-start">
             Renueva tu piel desde el interior. Belleza, firmeza y vitalidad en cada sorbo.
           <p class="feature-title">Esencia de juventud</p>
@@ -146,14 +146,14 @@
           <p class="feature-description d-none d-md-block">
             Tu piel refleja lo que tu cuerpo recibe. <br> Londinium te acompaña en cada paso hacia un bienestar visible.
           </p>
-          <button class="btn btn-lg btn-secondary-custom mt-4">Conocer más</button>
+          <a class="btn btn-lg btn-secondary-custom mt-4">Conocer más</a>
         </div>
       </div>
       <div class="row product-container justify-content-md-end py-4" id="product_5">
         <div class="col-lg-6 d-lg-none d-flex justify-content-center">
-          <img src="./static/images/products/ultra-rojo-narrow.png" alt="Foto de producto Ultra Rojo" class="w-75">
+          <img src="/static/images/products/ultra-rojo-narrow.png" alt="Foto de producto Ultra Rojo" class="w-75">
         </div>
-        <div class="col-lg-6 col-xl-8 product-description-box p-4">
+        <div class="col-lg-6 col-xl-8 product-description-box">
           <h2 class="section-title">Ultra Rojo Fusion</h2>
           <p class="section-subtitle text-start">
             La mezcla en polvo de vegetales y frutas rojas que <strong>potencia tu vitalidad</strong>
@@ -169,14 +169,14 @@
           <p class="feature-description d-none d-md-block">Sin conservantes ni aditivos artificiales.<br>
             Mezcla de ingredientes vegetales cuidadosamente seleccionados. Un producto pensado para quienes buscan alimentación consciente y nutritiva.
           </p>
-          <button class="btn btn-lg btn-secondary-custom mt-4">Conocer más</button>
+          <a class="btn btn-lg btn-secondary-custom mt-4">Conocer más</a>
         </div>
       </div>
       <div class="row product-container justify-content-md-end py-4" id="product_6">
         <div class="col-lg-6 d-lg-none d-flex justify-content-center">
-          <img src="./static/images/products/super-seed-narrow.png" alt="Foto de producto Super Seed" class="w-75">
+          <img src="/static/images/products/super-seed-narrow.png" alt="Foto de producto Super Seed" class="w-75">
         </div>
-        <div class="col-lg-6 col-xl-8 product-description-box p-4">
+        <div class="col-lg-6 col-xl-8 product-description-box">
           <h2 class="section-title">Super Seed</h2>
           <p class="section-subtitle text-start">
             Subtítulo
@@ -192,7 +192,7 @@
           <p class="feature-description d-none d-md-block">
             Feature description
           </p>
-          <button class="btn btn-lg btn-secondary-custom mt-4">Conocer más</button>
+          <a class="btn btn-lg btn-secondary-custom mt-4">Conocer más</a>
         </div>
       </div>
     </section>
@@ -214,35 +214,35 @@
               <label for="message" class="form-label mb-0">Consulta</label>
               <textarea class="form-control" name="message" id="message" rows="3"></textarea>
             </div>
-            <button class="btn btn-lg btn-secondary-custom" type="submit"><i class="bi bi-send"></i>Enviar consulta</button>
+            <a class="btn btn-lg btn-secondary-custom" type="submit"><i class="bi bi-send"></i>Enviar consulta</a>
           </form>
         </div>
         <div class="col-md-4 d-flex flex-column align-items-center justify-content-between p-4" id="message-container">
           <h2 class="section-title text-primary-custom">... o enviarnos un mensaje</h2>
-          <p class="section-text text-primary-custom">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem suscipit beatae recusandae molestias eos aut ipsa fuga delectus exercitationem. Quo officiis harum omnis natus iure aperiam reprehenderit eligendi assumenda aliquam.</p>
-          <button class="btn btn-lg btn-success"><i class="bi bi-whatsapp"></i>Whatsapp</button>
+          <p class="section-text text-primary-custom">Nuestro chat está disponible para responder tus consultas y brindarte más información acerca de nuestros productos.</p>
+          <a class="btn btn-lg btn-success" href="https://wa.me/+5491161889482"><i class="bi bi-whatsapp"></i>Whatsapp</a>
         </div>
       </div>
     </section>
     <section class="container d-flex flex-column justify-content-evenly py-8" id="aboutus">
-      <div class="row justify-content-center align-items-center gy-4 py-4" id="certifications">
+      <div class="row justify-content-center align-items-center gy-4 pb-4" id="certifications">
         <div class="col-4 col-sm-3 col-lg-2 text-center">
-          <img src="./static/images/logos/cruelty-free.svg" alt="cruelty-free">
+          <img src="/static/images/logos/cruelty-free.svg" alt="cruelty-free">
         </div>
         <div class="col-4 col-sm-3 col-lg-2 text-center">
-          <img src="./static/images/logos/fda-approved.svg" alt="fda-approved">
+          <img src="/static/images/logos/fda-approved.svg" alt="fda-approved">
         </div>
         <div class="col-4 col-sm-3 col-lg-2 text-center">
-          <img src="./static/images/logos/gluten-free.svg" alt="gluten-free">
+          <img src="/static/images/logos/gluten-free.svg" alt="gluten-free">
         </div>
         <div class="col-4 col-sm-3 col-lg-2 text-center">
-          <img src="./static/images/logos/halal.svg" alt="halal">
+          <img src="/static/images/logos/halal.svg" alt="halal">
         </div>
         <div class="col-4 col-sm-3 col-lg-2 text-center">
-          <img src="./static/images/logos/kosher.svg" alt="kosher">
+          <img src="/static/images/logos/kosher.svg" alt="kosher">
         </div>
         <div class="col-4 col-sm-3 col-lg-2 text-center">
-          <img src="./static/images/logos/paraben-free.svg" alt="paraben-free">
+          <img src="/static/images/logos/paraben-free.svg" alt="paraben-free">
         </div>
       </div>
       <div class="row p-4 justify-content-evenly">
@@ -250,7 +250,7 @@
           <h2 class="section-title text-primary-custom text-start">Acerca de nosotros</h2>
           <p class="section-text text-primary-custom text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, magnam. Nisi, ad? Possimus vero sunt, nam veniam perferendis aspernatur eos tempora nostrum corporis praesentium. Accusamus eligendi praesentium eaque pariatur repudiandae.
           Amet, architecto repudiandae impedit, aspernatur sunt aperiam facilis facere officiis, nesciunt praesentium quasi maiores laudantium unde. Rerum eaque quia eius? Ipsa maxime delectus repellendus beatae ullam nemo est illum nam!</p>
-          <button class="btn btn-lg btn-primary-custom">Conocer más</button>
+          <a class="btn btn-lg btn-primary-custom" href="about-us.html">Conocer más</a>
         </div>
         <div class="col-md-5" id="us-picture">
 
@@ -258,7 +258,35 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer class="container-fluid py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex flex-column nunito-text-bold">
+          <a class="navbar-brand fs-2 crimson-text-bold mb-4" href="#"><img src="/static/images/londinium-logo-light.svg" alt="logo" width="32" class="mx-2"> LONDINIUM</a>
+          <div class="d-flex flex-column d-md-none ms-2">
+            <!-- <a class="py-1" href=""><i class="bi bi-telephone"></i>Phone</a> -->
+            <a class="py-1" href="https://wa.me/+5491161889482"><i class="bi bi-whatsapp"></i>11 6188-9482</a>
+            <a class="py-1" href="https://maps.app.goo.gl/aeKiRTN585mLB3NfA"><i class="bi bi-geo-alt"></i>12 de Octubre 2666 - Quilmes</a>
+            <a class="py-1" href="mailto:info@londinium.com.ar"><i class="bi bi-envelope"></i>info@londinium.com.ar</a>
+          </div>
+          <div class="d-none d-md-flex flex-column ms-2">
+            <!-- <p class=""><i class="bi bi-telephone"></i>Phone</p> -->
+            <p class=""><i class="bi bi-whatsapp"></i>11 6188-9482</p>
+            <p class=""><i class="bi bi-geo-alt"></i>12 de Octubre 2666 - Quilmes</p>
+            <p class=""><i class="bi bi-envelope"></i>info@londinium.com.ar</p>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center justify-content-md-end mt-4 mt-md-0 column-gap-2">
+          <a href="https://intagram.com" class="display-5"><i class="bi bi-instagram"></i></a>
+          <a href="https://facebook.com" class="display-5"><i class="bi bi-facebook"></i></a>
+        </div>
+        <div class="col-md-12 text-center mt-4">
+          <p>Londinium 2025 | Diseño <a href="https://github.com/saucem" class="fw-bold">Saucem</a></p>
+        </div>
+      </div>
+    </div>
+            
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
