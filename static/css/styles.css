@@ -304,27 +304,27 @@ section {
 }
 
 #product_1 {
-  background-image: url(/static/images/products/ultra-verde-wide.png);
+  background-image: url(../images/products/ultra-verde-wide.png);
 }
 
 #product_2 {
-  background-image: url(/static/images/products/vitamina-c-wide.png);
+  background-image: url(../images/products/vitamina-c-wide.png);
 }
 
 #product_3 {
-  background-image: url(/static/images/products/colageno-magnesio-wide.png);
+  background-image: url(../images/products/colageno-magnesio-wide.png);
 }
 
 #product_4 {
-  background-image: url(/static/images/products/colageno-c-wide.png);
+  background-image: url(../images/products/colageno-c-wide.png);
 }
 
 #product_5 {
-  background-image: url(/static/images/products/ultra-rojo-wide.png);
+  background-image: url(../images/products/ultra-rojo-wide.png);
 }
 
 #product_6 {
-  background-image: url(/static/images/products/super-seed-wide.png);
+  background-image: url(../images/products/super-seed-wide.png);
 }
 
 #form-container {
