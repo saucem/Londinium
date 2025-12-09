@@ -289,7 +289,6 @@ section {
 
 .product-container {
   width: 80vw;
-  max-width: 1200px;
   background-size: contain;
   background-repeat: no-repeat;
   /* background-color: white; */
