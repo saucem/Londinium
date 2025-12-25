@@ -7,7 +7,7 @@
     --secondary-color: #DF9551;
     --secondary-light-color: #DF9551;
     --secondary-dark-color: #dA7212;
-    --tertiary-color: #FEEFD2;
+    --tertiary-color: #feefd2;
     --tertiary-light-color: #FEEFD2;
     --tertiary-dark-color: #FEEFD2;
     --dark-color: #222428;
@@ -166,6 +166,10 @@ footer {
   }
 }
 
+.card-text {
+  font-size: 0.85rem;
+  line-height: 1rem;
+}
 
 /* animations */
 
@@ -343,6 +347,18 @@ section {
   background-repeat: no-repeat;
   border-radius: 1rem;
 }
+
+/* Bootstrap customization */
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  & .btn {
+    align-self: center;
+  }
+}
+
 
 
 @media (max-width: 767px) {
