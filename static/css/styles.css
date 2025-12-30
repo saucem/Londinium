@@ -153,11 +153,17 @@ footer {
   text-align: start;
 }
 
+.product-description-box .fs-3 {
+  line-height: 1.75rem;
+}
+
 .table {
   border: 1px solid var(--primary-dark-color);
+  font-size: 0.8rem;
+  line-height: 0.8rem;
   & tbody tr {
-    font-size: 0.9rem;
-    line-height: 0.9rem;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
   }
   & td {
     padding-top: .25rem;
@@ -308,7 +314,7 @@ section {
 }
 
 #product_1 {
-  background-image: url(../images/products/ultra-verde-wide.png);
+  /* background-image: url(../images/products/ultra-verde-wide.png); */
 }
 
 #product_2 {
