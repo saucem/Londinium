@@ -263,7 +263,7 @@ section {
     height: 100vh;
     padding-top: 10vh;
   }
-  &#us-hero {
+  &#us-hero, &#thankyou-hero {
     height: 88vh;
   }
 
