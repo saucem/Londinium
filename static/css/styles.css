@@ -46,6 +46,17 @@ html {
   }
 }
 
+.btn-outline-primary-custom { 
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  &:hover {
+    color: var(--light-color);
+    background-color: var(--primary-color);
+  }
+}
+
+
 .btn-secondary-custom { 
   color: var(--light-color);
   background-color: var(--secondary-color);
@@ -105,12 +116,12 @@ footer {
 }
 
 .hero-title {
-  font-size: 8vw;
-  line-height: 8vw;
+  font-size: 7vw;
+  line-height: 7vw;
 }
 
 .hero-subtitle {
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 .nav-link {
@@ -131,6 +142,7 @@ footer {
 
 .section-title {
   font-size: 2.25rem;
+  line-height: 2.25rem;
   font-family: "Crimson Text", serif;
   font-weight: 700;
   text-align: center;
@@ -177,6 +189,14 @@ footer {
   line-height: 1rem;
 }
 
+.text-shadow {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+img.filter-invert {
+  filter: invert(100) brightness(100) drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.75));
+}
+
 /* animations */
 
 @keyframes slide-in-left {
@@ -206,6 +226,8 @@ body {
   font-style: normal;
 }
 
+
+
 .navbar {
   & img { vertical-align: text-top; }
 }
@@ -217,12 +239,17 @@ a img {
 /* sizing & positioning */
 
 .spacer {
-  height: 12vh;
+  height: 10vh;
+}
+
+.my-8 {
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important;
 }
 
 .py-8 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
 }
 
 #header-info { height: 4vh; }
@@ -234,7 +261,12 @@ section {
   position: relative;
   &#hero {
     height: 100vh;
+    padding-top: 10vh;
   }
+  &#us-hero {
+    height: 88vh;
+  }
+
 }
 
 .bi {
@@ -319,11 +351,23 @@ section {
 }
 
 #certifications {
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  background-image: url(../images/green-leaves.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 #us-picture {
-  background-image: url(../images/lab-drop.jpg);
+  background-image: url(../images/vegetal-lab.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+
+#colaboration-picture {
+  background-image: url(../images/handshake.jpg);
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
@@ -335,6 +379,7 @@ section {
   background-image: url(../images/brown-powder.jpg);
   background-size: cover;
 }
+
 
 .floating-filter {
   position: absolute;
@@ -354,10 +399,12 @@ section {
 .card {
   border-radius: 1rem;
   transition: all 200ms ease;
+  /*
   &:hover{
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
     transform: scale(100.5%);
   }
+  */
   & .card-body {
     display: flex;
     flex-direction: column;
@@ -373,12 +420,12 @@ section {
 
 @media (max-width: 767px) {
   .hero-title {
-    font-size: 15vw;
+    font-size: 14vw;
     line-height: 12vw;
   }
 
   .hero-subtitle {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
 

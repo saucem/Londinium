@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Londinium | Inicio</title>
+  <title>Londinium | Nosotros</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;500;700&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
@@ -29,9 +29,9 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link" href="./index.html#header-info">Inicio</a>
-            <a class="nav-link" href="./index.html#products">Productos</a>
+            <a class="nav-link" href="./products.html">Productos</a>
             <a class="nav-link" href="./index.html#contact">Contacto</a>
-            <a class="nav-link" href="./aboutus.html">Nosotros</a>
+            <a class="nav-link active" href="./aboutus.html">Nosotros</a>
             <a class="nav-link" href="./download.html">Descargas</a>
             <a class="nav-link" href="#">Acceder</a>
             <a href="#" class="nav-link"><img src="./static/images/lang-ar.png" alt="Idioma" width="24"></a>
@@ -41,61 +41,95 @@
     </nav>
   </header>
   <main>
-    <div class="spacer my-4"></div>
+    <div class="spacer"></div>
+    <section class="container d-flex justify-content-center align-items-center my-8" id="us-hero">
+      <div class="text-center">
+        <img src="./static/images/hero-bottom-left.svg" alt="" class="decoration" id="hero-bottom-left">
+        <img src="./static/images/hero-bottom-right.svg" alt="" class="decoration" id="hero-bottom-right">        
+        <h1 class="crimson-text-bold text-center text-dark hero-title fade-in-0">
+          Sobre Nosotros
+        </h1>
+        <h2 class="crimson-text-semibold text-center text-primary-custom hero-subtitle fade-in-1">
+          En Londinium creemos que el bienestar comienza <strong>desde adentro</strong>...
+        </h2>
+        <a href="#start" class="btn btn-secondary-custom fade-in-2 mt-4">Descubrir</a>
+      </div>
+    </section>
+
+    <section class="container my-4" id="start">
+        <p class="section-text text-start">
+          ... por eso creamos suplementos que combinan lo mejor de la naturaleza con la innovación de la ciencia moderna.
+        </p>
+        <p class="section-text text-start">
+          Disponemos de un equipo propio de <strong>I+D+i</strong> formado por profesionales especialistas en las áreas de desarollo de <strong>productos naturales a base de plantas</strong> que se esfuerza por investigar y desarrollar cada fórmula, pensadas para acompañarte en tu día a día, aportando energía, equilibrio, vitalidad y cuidado para tu piel y tu sistema inmunológico, aumentado tu salud y bienestar. Seleccionamos ingredientes de la más <strong>alta calidad</strong> y seguimos procesos que aseguran pureza y eficacia.
+        </p>
+        <p class="section-title crimson-text-bold text-center text-primary-custom pt-4">Nuestros pilares</p>
+    </section>
+
     <section class="container py-4">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h1 class="section-title title-text text-start">Sobre nosotros</h1>
+      <div class="row align-items-center justify-content-center flex-md-row-reverse">
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <h1 class="fs-2 fw-bolder title-text text-start">Honestidad</h1>
           <p>
-            En Londinium creemos que el bienestar comienza <strong>desde adentro</strong>. Por eso creamos suplementos nutricionales de alta pureza, combinando la riqueza de la naturaleza con los avances de la ciencia moderna.
-          </p>
-          <p>
-            Nos comprometemos a ofrecer <strong>productos honestos, seguros y eficaces</strong>, elaborados bajo estándares internacionales de calidad. Cada fórmula está diseñada para aportar beneficios tangibles: más energía, un sistema inmunológico fortalecido, piel saludable, vitalidad y equilibrio. Seleccionamos <strong>ingredientes premium</strong> de fuentes confiables y aplicamos procesos que garantizan trazabilidad, potencia y pureza. <br>
-            Creemos en un <strong>bienestar consciente, accesible y sostenible</strong>, que acompañe a las personas en su día a día.
+            Nos comprometemos a ofrecer <strong>productos honestos, seguros y eficaces</strong>, elaborados bajo estándares internacionales de calidad. Cada fórmula está diseñada para aportar <strong>beneficios tangibles:</strong> más energía, un sistema inmunológico fortalecido, piel saludable, vitalidad y equilibrio. 
           </p>
         </div>
-        <div class="col-md-6">
-          <img src="./static/images/vegetal-lab.jpg" alt="imagen de persona analizando una muestra vegetal" class="w-100 rounded-4">
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <img src="./static/images/products/super-seed-escena.png" alt="imagen de elementos de nutrición" class="w-100 rounded-4">
+        </div>
+      </div>
+    </section>
+    <section class="container py-4">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <h1 class="fs-2 fw-bolder title-text text-start">Calidad</h1>
+          <p>
+            Seleccionamos <strong>ingredientes premium</strong> de fuentes confiables y aplicamos procesos que garantizan <strong>trazabilidad, potencia y pureza</strong>.
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <img src="./static/images/lab-material.jpg" alt="imagen de elementos de nutrición" class="w-100 rounded-4">
         </div>
       </div>
     </section>
 
+
     <section class="container py-4">
-      <div class="row align-items-center flex-md-row-reverse">
-        <div class="col-md-6">
-          <h1 class="section-title title-text text-start">Visión</h1>
+      <div class="row align-items-center justify-content-center flex-md-row-reverse">
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <h1 class="fs-2 fw-bolder title-text text-start">Visión</h1>
           <p>
             Ser una marca referente en <strong>bienestar integral</strong>, ofreciendo productos que fusionan ciencia y naturaleza para mejorar la calidad de vida de las personas. Aspiramos a ser un símbolo de pureza, innovación y excelencia, llevando <strong>nutrición premium</strong> a cada hogar y expandiendo la presencia de Londinium a nivel internacional.
           </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-5 col-xl-4">
           <img src="./static/images/nutrition.jpg" alt="imagen de elementos de nutrición" class="w-100 rounded-4">
         </div>
       </div>
     </section>
     <section class="container py-4">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h1 class="section-title title-text text-start">Misión</h1>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <h1 class="fs-2 fw-bolder title-text text-start">Misión</h1>
           <p>
             Desarrollar suplementos nutricionales de <strong>alta pureza y eficacia</strong>, elaborados con ingredientes seleccionados y formulaciones científicas que potencian la salud, la belleza y la energía. <br>
             Nuestra misión es brindar un <strong>bienestar auténtico</strong>, accesible y respaldado por la excelencia en cada detalle. También, brindar <strong>servicios de elaboración</strong> para terceros, creando fórmulas personalizadas y diseñando productos que reflejen la identidad de otras marcas.
           </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-5 col-xl-4">
           <img src="./static/images/color-powders.jpg" alt="imagen de polvos nutritivos" class="w-100 rounded-4">
         </div>
       </div>
     </section>
     <section class="container py-4">
-      <div class="row flex-md-row-reverse align-items-center">
-        <div class="col-md-6">
-          <h1 class="section-title title-text text-start">Colaboración</h1>
+      <div class="row align-items-center justify-content-center flex-md-row-reverse">
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <h1 class="fs-2 fw-bolder title-text text-start">Colaboración</h1>
           <p>
             Además de nuestra línea propia, en Londinium <strong>elaboramos productos para terceros</strong>, desarrollando fórmulas personalizadas y ofreciendo diseño integral de suplementos y nutracéuticos, adaptándonos a las necesidades de cada marca y mercado.
           </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-5 col-xl-4">
           <img src="./static/images/handshake.jpg" alt="imagen de personas dándose la mano" class="w-100 rounded-4">
         </div>
       </div>
@@ -104,7 +138,7 @@
     <section class="container-fluid py-4 my-4" id="inspirational">
       <div class="floating-filter darken"></div>
       <div class="row justify-content-center">
-        <div class="col-md-6 text-light text-center">
+        <div class="col-md-6 col-lg-5 col-xl-4 text-light text-center">
           <p class="fs-4 px-4 px-md-0 pt-3 position-relative">
             <strong>Londinium</strong> nace con la misión de transformar la nutrición en una experiencia simple, estética y efectiva. <br>
             Una marca que <strong>inspira hábitos saludables</strong> y se convierte en aliada de quienes buscan vivir mejor, sentirse bien y potenciar su salud a través de la ciencia y la naturaleza.

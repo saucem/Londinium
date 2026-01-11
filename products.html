@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Londinium | Inicio</title>
+  <title>Londinium | Productos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;500;700&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
@@ -28,11 +28,11 @@
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="./index.html#header-info">Inicio</a>
-            <a class="nav-link" href="./products.html">Productos</a>
+            <a class="nav-link" href="./index.html#header-info">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="./products.html">Productos</a>
             <a class="nav-link" href="./index.html#contact">Contacto</a>
-            <a class="nav-link" href="./aboutus.html">Nosotros</a>
-            <a class="nav-link" href="./download.html">Descargas</a>
+            <a class="nav-link" href="aboutus.html">Nosotros</a>
+            <a class="nav-link" href="download.html">Descargas</a>
             <a class="nav-link" href="#">Acceder</a>
             <a href="#" class="nav-link"><img src="./static/images/lang-ar.png" alt="Idioma" width="24"></a>
           </div>
@@ -41,73 +41,82 @@
     </nav>
   </header>
   <main>
-    <section class="container-fluid d-flex justify-content-center align-items-center" id="hero">
-      <div class="text-center">
-        <!-- <img src="./static/images/hero-left.svg" alt="" class="decoration" id="hero-left">
-        <img src="./static/images/hero-right.svg" alt="" class="decoration" id="hero-right"> -->
-        <img src="./static/images/hero-bottom-left.svg" alt="" class="decoration" id="hero-bottom-left">
-        <img src="./static/images/hero-bottom-right.svg" alt="" class="decoration" id="hero-bottom-right">
-        <h1 class="crimson-text-bold text-center text-dark hero-title fade-in-0">
-          Belleza y bienestar <br> desde lo natural.
-        </h1>
-        <h2 class="crimson-text-semibold text-center text-primary-custom hero-subtitle fade-in-1">
-          Ingredientes nobles. Inspiración botánica. Ciencia y tradición.
-        </h2>
-        <a class="btn btn-secondary-custom mt-4 fade-in-2" href="aboutus.html">Quiénes somos</a>
+    <div class="spacer"></div>
+    <section class="container my-4 py-4" id="products">
+      <h1 class="section-title title-text text-center p-4">Nuestros productos</h1>
+      <p class="section-text text-primary-custom text-start">
+        Contamos con un amplio surtido de suplementos alimenticios <strong>naturales a base de plantas</strong> pensados para acompañarte en tu día a día, aportando energía, equilibrio, vitalidad y cuidado para tu piel y tu sistema inmunológico, aumentado tu <strong>salud y bienestar</strong>. <br>
+        Seleccionamos ingredientes de la más <strong>alta calidad</strong> y seguimos procesos que aseguran pureza y eficacia.
+      </p>
+      <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-4 row-gap-4 my-4">
+        <div class="col">
+          <div class="card border-0 bg-transparent h-100">
+            <img src="./static/images/products/ultra-verde-narrow-v2.png" class="card-img-top" alt="...">
+            <div class="card-body text-center px-2">
+              <h5 class="card-title fw-bold text-primary-custom">Ultra Verde</h5>
+              <p class="card-text">Revitaliza cuerpo y mente. Disminuye el cansancio y la fatiga</p>
+              <a href="./products/ultra-verde.html" class="btn btn-outline-primary-custom"><i class="bi bi-info-circle d-none d-sm-inline-block"></i>Ver detalle</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 bg-transparent h-100">
+            <img src="./static/images/products/colageno-c-narrow-v2.png" class="card-img-top" alt="...">
+            <div class="card-body text-center px-2">
+              <h5 class="card-title fw-bold text-primary-custom">Colágeno y vitamina C</h5>
+              <p class="card-text">Promueve una piel más tonificada</p>
+              <a href="./products/colageno-vitamina-c.html" class="btn btn-outline-primary-custom"><i class="bi bi-info-circle d-none d-sm-inline-block"></i>Ver detalle</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 bg-transparent h-100">
+            <img src="./static/images/products/ultra-rojo-narrow-v2.png" class="card-img-top" alt="...">
+            <div class="card-body text-center px-2">
+              <h5 class="card-title fw-bold text-primary-custom">Ultra Rojo</h5>
+              <p class="card-text">Fuente natural de antioxidantes</p>
+              <a href="./products/ultra-rojo.html" class="btn btn-outline-primary-custom"><i class="bi bi-info-circle d-none d-sm-inline-block"></i>Ver detalle</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 bg-transparent h-100">
+            <img src="./static/images/products/colageno-magnesio-narrow-v2.png" class="card-img-top" alt="...">
+            <div class="card-body text-center px-2">
+              <h5 class="card-title fw-bold text-primary-custom">Colágeno y Magnesio</h5>
+              <p class="card-text">Mejora la flexibilidad articular y la elasticidad de la piel</p>
+              <a href="./products/colageno-magnesio.html" class="btn btn-outline-primary-custom"><i class="bi bi-info-circle d-none d-sm-inline-block"></i>Ver detalle</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 bg-transparent h-100">
+            <img src="./static/images/products/vitamina-c-narrow-v2.png" class="card-img-top" alt="...">
+            <div class="card-body text-center px-2">
+              <h5 class="card-title fw-bold text-primary-custom">Vitamina C</h5>
+              <p class="card-text">Favorece el mantenimiento de las defensas naturales del cuerpo</p>
+              <a href="./products/vitamina-c.html" class="btn btn-outline-primary-custom"><i class="bi bi-info-circle d-none d-sm-inline-block"></i>Ver detalle</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 bg-transparent h-100">
+            <img src="./static/images/products/super-seed-narrow-v2.png" class="card-img-top" alt="...">
+            <div class="card-body text-center px-2">
+              <h5 class="card-title fw-bold text-primary-custom">Super Seed</h5>
+              <p class="card-text">Fuente natural de Omega 3 y Omega 6</p>
+              <a href="./products/super-seed.html" class="btn btn-outline-primary-custom"><i class="bi bi-info-circle d-none d-sm-inline-block"></i>Ver detalle</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="container my-4 " id="business">
+    <section class="container-fluid">
       <div class="row justify-content-center align-items-center my-8">
-        <div class="col-md-6 col-lg-5 mb-4">
-          <h2 class="section-title text-primary-custom text-start">Productos propios</h2>
-          <p class="section-text text-primary-custom text-start">
-            Contamos con un amplio surtido de suplementos alimenticios <strong>naturales a base de plantas</strong> pensados para acompañarte en tu día a día, aportando energía, equilibrio, vitalidad y cuidado para tu piel y tu sistema inmunológico, aumentado tu <strong>salud y bienestar</strong>. <br>
-            Seleccionamos ingredientes de la más <strong>alta calidad</strong> y seguimos procesos que aseguran pureza y eficacia.
-          </p>
-          <a href="/products.html" class="btn btn-secondary-custom">Ver la línea de productos</a>
-        </div>
-        <div class="col-md-6 col-lg-5 mb-4">
-          <img src="./static/images/products/super-seed-escena.png" alt="Frasco de suplemento alimenticio a base de semillas" class="rounded-4 w-100">
-        </div>
-      </div>
-      <div class="row justify-content-center align-items-center my-8 flex-md-row-reverse">
-        <div class="col-md-6 col-lg-5 mb-4">
-          <h2 class="section-title text-primary-custom text-start">Desarrollos para terceros</h2>
-          <p class="section-text text-primary-custom text-start">
-            Londinium se especializa en la producción de suplementos alimenticios (sólidos y líquidos) y de nutracéuticos para terceros. <br>
-            Ponemos toda nuestra experiencia y capacidad técnica para llevar adelante tu idea, desde su desarrollo hasta su producción.
-          </p>
-          <a href="/b2bcontact.html" class="btn btn-primary-custom">Solicitar asesoramiento</a>
-        </div>
-        <div class="col-md-6 col-lg-5 mb-4">
-          <img src="./static/images/handshake.jpg" alt="Frasco de suplemento alimenticio a base de semillas" class="rounded-4 w-100">
-        </div>
-      </div>
-    </section>
-
-    <section class="container-fluid" id="certifications">
-      <div class="row justify-content-center align-items-center py-8">
-        <div class="col-sm-8 text-center py-4">
-          <img src="./static/images/logos/gluten-free.svg" alt="gluten-free" class="filter-invert filter-shadow">
-          <p class="text-light-custom fw-bold display-6 text-shadow">Productos de origen Vegetal 100% libres de gluten</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="container d-flex flex-column justify-content-evenly py-4 my-4" id="aboutus">
-      <div class="row py-4 justify-content-evenly">
-        <div class="col-md-5" id="us-picture">
-        </div>
-        <div class="col-md-6 text-end p-4" id="us-description">
-          <h2 class="section-title text-primary-custom text-start">Nuestra visión</h2>
-          <p class="section-text text-primary-custom text-start">
-            En Londinium creemos que el bienestar empieza desde adentro. Por eso creamos suplementos que combinan lo mejor de la naturaleza con la innovación de la ciencia moderna.
-          </p>
-          <p class="section-text text-primary-custom text-start">
-            Nuestro compromiso es ofrecerte un <strong>bienestar consciente, accesible y sostenible</strong>, para que cada elección nutricional sume a tu salud y estilo de vida, aplicando también a formatos, técnicas de fabricación y formas de presentación, pensando especialmente en la sostenibilidad de los recursos utilizados.
-          </p>
-          <a class="btn btn-primary-custom" href="aboutus.html">Conocer más de nosotros</a>
+        <div class="col-sm-8 text-center">
+          <img src="./static/images/logos/gluten-free.svg" alt="gluten-free" class="opacity-50">
+          <p class="fw-bold display-6 opacity-50">Productos de origen Vegetal 100% libres de gluten</p>
         </div>
       </div>
     </section>
@@ -133,7 +142,7 @@
             <a class="btn btn-secondary-custom" type="submit"><i class="bi bi-send"></i>Enviar consulta</a>
           </form>
         </div>
-        <div class="col-md-5 d-flex flex-column align-items-center justify-content-between p-4" id="message-container">
+        <div class="col-md-4 d-flex flex-column align-items-center justify-content-between p-4" id="message-container">
           <h2 class="section-title text-primary-custom">... o enviarnos un mensaje</h2>
           <p class="section-text text-primary-custom">Nuestro chat está disponible para responder tus consultas y brindarte más información acerca de nuestros productos.</p>
           <a class="btn btn-success" href="https://wa.me/+5491161889482"><i class="bi bi-whatsapp"></i>Whatsapp</a>
