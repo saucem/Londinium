@@ -126,7 +126,12 @@
         <div class="col-md-6 d-flex flex-column justify-content-between p-4" id="form-container">
           <h2 class="section-title text-primary-custom text-center">Podés escribirnos</h2>
           <p class="section-text text-primary-custom">Completá el formulario con tus datos y tu consulta, y un asesor se pondrá en contacto a la brevedad.</p>
-          <form action="" method="post" class="text-center text-primary-custom">
+          <form action="https://api.web3forms.com/submit" method="post" class="text-center text-primary-custom" id="form">
+            <input type="hidden" name="access_key" value="13618bd0-cd95-4d9c-a9c4-e78d8c4240db">
+            <input type="hidden" name="form_origin" value="Products">
+            <input type="hidden" name="from_name" value="Londinium Landing Page">
+            <input type="hidden" name="subject" value="Nuevo mensaje desde el Formulario Web">
+            <!-- <input type="hidden" name="redirect" value="https://saucem.github.io/Londinium/thankyou.html"> -->
             <div class="mb-3 text-start">
               <label for="name" class="form-label mb-0">Nombre</label>
               <input type="text" class="form-control" name="name" id="name">
