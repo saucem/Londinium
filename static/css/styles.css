@@ -197,6 +197,10 @@ img.filter-invert {
   filter: invert(100) brightness(100) drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.75));
 }
 
+img.filter-invert-shadowless {
+  filter: invert(100) brightness(100);
+}
+
 /* animations */
 
 @keyframes slide-in-left {
